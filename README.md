@@ -11,12 +11,12 @@ This project is essentially to learn redux and integration with reactjs. A simpl
 ### On Patch/fix/changes (minor/major)
 
 
-`Patch [Version index].[patch index]`
+`Patch [Version number].[patch serial]`
 
 ### Development Phase commits
 
 
-`v[version number that is currently being developed] Delta [index of major changes, ie. Component additions].[index of small changes following the major change].`
+`v[version number that is currently being developed] Delta [serial of major changes, ie. Component additions].[serial of small changes following the major change].`
 
 `Example`  => `v4 Delta 1.8`
 
@@ -31,15 +31,22 @@ This project is essentially to learn redux and integration with reactjs. A simpl
 
 ### On Devnotes update
 
-`v[version under development] echo mic [index of devnotes update]`
+`v[version under development] echo mic [serial of devnotes update]`
 
 `Example` => `v4 echo mic 1`
 
 
 ### On Readme.md update
 
-`Readme update v[version currently under development] n[index of readme update] `
+`Readme update v[version currently under development] n[serial of readme update] `
 
 then as the extended description 
 
 `some description`
+
+
+### On dependency Installs
+
+`v[version under development] India [serial of installation]`
+
+`Example` => `v1 India 1`
