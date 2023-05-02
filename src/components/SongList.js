@@ -6,7 +6,7 @@ class SongList extends Component {
     songslist() {
         return this.props.songs.map((song) => {
             return (
-                <div>
+                <div key={song.id}>
                     <h3>Song Title: {song.title}</h3>
                     <label>Song Duration: {song.duration}</label>
                     <br></br>
