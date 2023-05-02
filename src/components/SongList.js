@@ -7,9 +7,11 @@ class SongList extends Component {
         return this.props.songs.map((song) => {
             return (
                 <div>
-                    <h3>{song.title}</h3>
-                    <label>{song.duration}</label>
-                    <label>{song.id}</label>
+                    <h3>Song Title: {song.title}</h3>
+                    <label>Song Duration: {song.duration}</label>
+                    <br></br>
+                    <br></br>
+                    <label>Song Id: {song.id}</label>
                 </div>
             )
         })
