@@ -3,15 +3,15 @@ import { connect } from 'react-redux';
 
 class SongList extends Component {
 
-    songslist() {
+    renderSongslist() {
         return this.props.songs.map((song) => {
             return (
-                <div key={song.id}>
-                    <h3>Song Title: {song.title}</h3>
-                    <label>Song Duration: {song.duration}</label>
-                    <br></br>
-                    <br></br>
-                    <label>Song Id: {song.id}</label>
+                <div className='item' key={song.id}>
+                    <div className='content'>{song.title}</div>
+                    <div className='right floated content' >
+                        <button className='ui button primary'>Select</button>
+                    </div>
+                    <br />
                 </div>
             )
         })
@@ -20,17 +20,17 @@ class SongList extends Component {
     render() {
         return (
             <div>
-                SongList
-                {this.songslist()}
+                <h3>SongList</h3>
+                {this.renderSongslist()}
             </div>
         )
     }
 };
 
 const mapStateToProps = (state) => {
-    // console.log(state);
+    console.log(state);
     return {
-        songs: state.songs
+        songs: state.songs,
     };
 }
 
