@@ -1,10 +1,11 @@
 // Action Creator
-export const selectSong = (songName, songId) => {
+export const selectSong = (song) => {
     return {
         type: 'SELECT_SONG',
         paylaod: {
-            songName: songName,
-            songId: songId
+            songName: song.title,
+            songDuration: song.duration,
+            songId: song.id,
         }
     }
 }
