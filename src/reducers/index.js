@@ -15,7 +15,7 @@ const songsListReducer = () => {
 }
 
 const selectedSongReducer = (selectedSong = null, action) => {
-    if (action.type === 'SELECT_SONG') {
+    if (action.type === 'SONG_SELECTED') {
         return action.payload;
     } else {
         return selectedSong;
@@ -24,7 +24,7 @@ const selectedSongReducer = (selectedSong = null, action) => {
 
 export default combineReducers({
     songs: songsListReducer,
-    selectedSongg: selectedSongReducer
+    selectedSong: selectedSongReducer,
 })
 
 
