@@ -1,0 +1,54 @@
+.songListCom {
+    width: 200%;
+}
+
+.component {
+    display: flex;
+}
+
+
+.songList {
+    flex: 1;
+    margin-right: 60px;
+    padding-top: 50px;
+}
+
+.songList-box {
+    width: auto;
+    background-color: #202020;
+    color: #fafafa;
+}
+
+.songList-box h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.songTitle {
+    margin-left: 30px;
+}
+
+.songList-box-button {
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.songDetails {
+    flex: 1;
+    margin-left: 60px;
+}
+
+.detail-card {
+    position: relative;
+    top: 150px;
+    font-family: sans-serif;
+    padding: 30px;
+    color: #fafafa;
+    background-color: #202020;
+    box-shadow: 0px 0px 30px #000;
+}
+
+.detail-card-heading {
+    position: relative;
+    text-align: center;
+}
