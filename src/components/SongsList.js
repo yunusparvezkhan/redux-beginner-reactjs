@@ -25,7 +25,6 @@ const SongsList = () => {
     return (
         <div>
             {renderSongslist()}
-            {console.log(selectedSong)}
         </div>
     )
 }
